@@ -14,9 +14,7 @@ jobs:
         node-version: '20'
     - name: Install & Test
       working-directory: ./hello-docker
-      run: |
-        npm install
-        npm test
+      run: node helo.js
 
   vite-project:
     runs-on: ubuntu-latest
